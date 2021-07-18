@@ -8,7 +8,7 @@ from datetime import datetime
 #######################################
 #开始预处理处理数据
 #读取粉丝增长量
-filename='D:\PyCharmFiles\TikTokAnalysis\data\人民日报3月粉丝增长数据.csv'
+filename= '/data/人民日报3月粉丝增长数据.csv'
 with open(filename,encoding='utf-8-sig') as f: #打开这个文件，并将结果文件对象存储在f中
     reader=csv.reader(f)  #创建一个阅读器reader
     header_row=next(reader) #返回文件中的下一行
@@ -17,7 +17,7 @@ with open(filename,encoding='utf-8-sig') as f: #打开这个文件，并将结�
         newfan=int(row[1])    #将字符串转换为数字
         newfans.append(newfan)   #存储新增粉丝
 #读取分享，评论，转发数据
-filename='D:\PyCharmFiles\TikTokAnalysis\data\人民日报3月份视频数据.csv'
+filename= '/data/人民日报3月份视频数据.csv'
 with open(filename,encoding='utf-8-sig') as f: #打开这个文件，并将结果文件对象存储在f中
     reader=csv.reader(f)  #创建一个阅读器reader
     header_row=next(reader) #返回文件中的下一行
@@ -81,7 +81,7 @@ for cnt in cnts:
         flag = flag + 1;
     sum_shares.append(sum_share)
 #导出数据
-with open('ProcessedData.csv', 'w', newline='') as f:
+with open('../ProcessedData.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['likes', 'comments', 'shares', 'date'])
     temp_list = []
