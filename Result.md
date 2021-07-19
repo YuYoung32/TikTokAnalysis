@@ -16,7 +16,7 @@ R方为0.261说明拟合效果较好。
 
 注：由于粉丝增长数、点赞数等数值相差较大，为了能直观显示，我们对数据采取**归一化处理**。
 
-![](D:\PyCharmFiles\TikTokAnalysis\Result.png)
+![](https://github.com/YuYoung32/TikTokAnalysis/blob/master/Result.png)
 
 ### Comment
 
